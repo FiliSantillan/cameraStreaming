@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>getUserMedia API & MediaStream API</title>
+	
+	<!-- ESTILO -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- GOOGLE FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- META -->
+	<meta charset="utf-8">
+	
+	<!-- VIEWPORT -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- FACEBOOK -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- TWITTER -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</head>
+<body>
+
+	<h1>getUserMedia API & MediaStream API</h1>
+	<a href="http://filisantillan.com/" target="blank"><h2>Fili Santillán</h2></a>
+	<!-- <p class="recuerda">Recuerda que debes estar en un dispositivo movil (smartphone, tablet) para poder usar el demo.</p> -->
+
+	<section class="container">
+		<p>Da click en el botón para encender tu cámara</p>
+		<button id="boton" class="boton fa fa-video-camera"></button>
+		<video id="video" class="video" width="720" height="480" autoplay></video>
+	</section>
+
+	<footer class="footer">
+
+		<a href="#" target="blank" class="article">Ver Artículo</a>
+		<p>getUserMedia/MediaStream aún no son soportados por todos los navegadores</p>
+
+		<!-- ICONS SOCIAL -->
+		<div class="social">
+			<!-- ICON BlOG -->
+			<a href="http://filisantillan.com/" target="blank" class="icon">
+				<i class="fa fa-link"></i>
+			</a>
+
+			<!-- ICON CODEPEN -->
+			<a href="http://codepen.io/FiliMX/" target="blank" class="icon">
+				<i class="fa fa-codepen"></i>
+			</a>
+
+			<!-- ICON FACEBOOK -->
+			<a href="https://www.facebook.com/FiliSantillanMX" target="blank" class="icon">
+				<i class="fa fa-facebook"></i>
+			</a>
+
+			<!-- ICON TWITTER -->
+			<a href="https://twitter.com/FiliMX" target="blank" class="icon">
+				<i class="fa fa-twitter"></i>
+			</a>
+
+			<!-- ICON GOOGLE PLUS -->
+			<!-- <a href="https://plus.google.com/+FiliMart%C3%ADnezZ" target="blank" class="icon">
+				<i class="fa fa-google-plus-square"></i>
+			</a> -->
+			
+			<!-- ICON INSTAGRAM -->
+			<a href="https://instagram.com/filimx/" target="blank" class="icon">
+				<i class="fa fa-instagram"></i>
+			</a>
+			
+			<!-- ICON LINKEDIN -->
+			<a href="http://mx.linkedin.com/in/filisantillan" target="blank" class="icon">
+				<i class="fa fa-linkedin"></i>
+			</a>
+
+			<!-- ICON GITHUB -->
+			<a href="https://github.com/FiliMX" target="blank" class="icon">
+				<i class="fa fa-github-alt"></i>
+			</a>    
+		</div>
+
+		<!-- INFO -->
+		<div class="info">
+			<a href="http://caniuse.com/#feat=stream" target="blank">Soporte actual</a>
+			<i class="fa fa-heart"></i>
+			<a href="https://github.com/FiliMX/cameraStreaming" target="blank">Ver en Github</a>
+		</div>
+
+		<div class="share">
+			<div class="fb-share-button" data-href="http://filimx.github.io/cameraStreaming/" data-layout="button_count"></div>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="Streaming con HTML5" data-via="FiliMX">Tweet</a>
+		</div>
+	</footer>
+	
+	<script src="script.js"></script>
+</body>
+</html>

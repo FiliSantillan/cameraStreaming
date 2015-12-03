@@ -1,0 +1,117 @@
+body{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	background: #222831;
+	color: white;
+	font-weight: 300;
+}
+
+h1{
+	font-size: 2em;
+	margin: 0.5rem 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h2{
+	font-size: 1.5em;
+	margin: 0;
+	border: 2px solid white;
+	padding: 0.5em;
+	display: inline-block;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+figure{
+	margin: 0;
+}
+
+.recuerda{
+	display: none;
+}
+
+.container .boton{
+	padding: 1rem 1rem;
+	font-size: 2.5rem;
+	border-radius: 50%;
+	border: 1px solid white;
+	background: none;
+	cursor: pointer;
+	transition: 0.3s;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	outline: 0;
+}
+
+.container .boton:hover{
+	transform: scale(1.2);
+	color: #e52d27;
+	border-color: #e52d27;
+}
+
+.container .video{
+	margin: 2rem 0;
+	width: 100%;
+	max-width: 720px;
+}
+
+.footer{
+	font-size: 1.2em;
+	color: #F43E4D;
+}
+
+.footer .article{
+	margin: 0 0 1em 0;
+	display: inline-block;
+}
+
+.social .icon{
+	font-size: 2em;
+	margin: 0 0.5rem;
+}
+
+.social .icon i{
+	transition: 0.3s;
+}
+
+.social .icon i:hover{
+	transform: scale(1.3);
+}
+
+.info{
+	margin: 1em 0 0 0;
+}
+
+.info .fa-heart{
+	margin: 0 0.7em;
+}
+
+.share > div, .share > iframe{
+  vertical-align: top;
+  margin: 1em 1em 0 1em !important;
+}
+
+
+@media all and (min-width: 769px){
+
+	h1{
+		font-size: 3em;
+		margin: 1em 0 0.5rem 0;
+	}
+
+	.btn{
+		width: 40%;
+		margin: 0 0.5em 1em 0;
+	}
+}
+
+@media all and (min-width: 1080px){
+	.recuerda{
+		display: block;
+	}
+}
